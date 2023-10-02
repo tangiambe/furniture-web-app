@@ -4,9 +4,13 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import NavBar from "./components/Navbar/Navbar";
 import Loader from "./components/Loader/Loader";
 import "react-toastify/dist/ReactToastify.css";
+import { Register } from "./pages/Register";
+import { Login } from "./pages/Login";
 const Home =lazy(()=> import("./pages/Home"))
 const Shop =lazy(()=> import("./pages/Shop"))
 const Cart =lazy(()=> import("./pages/Cart"))
+// const Register = import("./pages/Register")
+
 const ProductDetails =lazy(()=> import("./pages/ProductDetails"));
 export const DataContainer = createContext();
 function App() {
@@ -48,6 +52,8 @@ function App() {
             <Route path='/shop' element={<Shop/>}/>
             <Route path='/shop/:id' element={<ProductDetails/>}/>
             <Route path='/cart' element={<Cart/>}/>
+            <Route path='/register' element={<Register/>}/>
+            <Route path='/login' element={<Login/>}/>
           </Routes>
         </Router>
       </Suspense>
