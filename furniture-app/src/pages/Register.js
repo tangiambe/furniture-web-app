@@ -33,7 +33,7 @@ export const Register = () => {
 
     return (
         <>
-            <Container fluid id="wrapper" className="d-flex align-items-center">
+            <Container className="d-flex align-items-center">
             <Card id='signupCard' className="mx-auto ">
                 <Row id="signupPageRow">
                     <Container className="mt-1">

@@ -6,10 +6,10 @@ import Loader from "./components/Loader/Loader";
 import "react-toastify/dist/ReactToastify.css";
 import { Register } from "./pages/Register";
 import { Login } from "./pages/Login";
+import { Checkout } from "./pages/Checkout";
 const Home =lazy(()=> import("./pages/Home"))
 const Shop =lazy(()=> import("./pages/Shop"))
 const Cart =lazy(()=> import("./pages/Cart"))
-// const Register = import("./pages/Register")
 
 const ProductDetails =lazy(()=> import("./pages/ProductDetails"));
 export const DataContainer = createContext();
@@ -54,6 +54,7 @@ function App() {
             <Route path='/cart' element={<Cart/>}/>
             <Route path='/register' element={<Register/>}/>
             <Route path='/login' element={<Login/>}/>
+            <Route path='/checkout' element={<Checkout/>}/>
           </Routes>
         </Router>
       </Suspense>

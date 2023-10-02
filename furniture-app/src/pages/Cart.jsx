@@ -103,7 +103,7 @@ const Cart = () => {
                       </span>
                     </li>
                     <Link
-                  to="#"
+                  to="/checkout"
                   className="btn btn-lg btn-block"
                   style={{ marginTop: "20px", backgroundColor: "#598d59", color: "#fff" }}
                 > Go to Checkout
